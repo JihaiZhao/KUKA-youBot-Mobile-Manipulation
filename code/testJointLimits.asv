@@ -1,0 +1,19 @@
+function speed_limits = testJointLimits(joint_theta,J_arm,J_base,V, speed)
+% Input: The input of the function includes joint_speed, J_arm, J_base, V 
+%       joint_speed: the speed needed to be check whether reach the limits 
+%       J_arm: the jacobian matrix of the arm 
+%       J_base: the jacobian matrix of the base 
+%       V: the commanded end-effector twist expressed in the end-effector frame 
+% 
+% Output: 
+%       speed_limits: the updated joint speed after checking the joints limits 
+    res = []
+    if joint_theta(3) > -0.2
+        res = [res,3]
+    end
+    if joint_theta(4) > -0.2
+        J_arm(:, 7) = zeros(6,1);
+        J = [J_base, J_arm];
+        speed_limits = pinv(J, 1e-2) * V;
+    end
+end
