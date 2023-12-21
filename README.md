@@ -96,3 +96,6 @@ To achieve the goal of the project I wrote 4 functions.
         Output: 
 
         res: which joint reaches the limits 
+
+
+[video]https://github.com/JihaiZhao/KUKA-youBot-Mobile-Manipulation/assets/99274626/3d6fabc4-0b4e-43af-8c54-d53de56d772b
