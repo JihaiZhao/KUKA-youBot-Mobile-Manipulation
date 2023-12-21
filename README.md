@@ -1,7 +1,8 @@
-## Robot-Manipulation
+# Robot-Manipulation
 The propose of this project is writing software that plans a trajectory for the end-effector of the youBot mobile manipulator (a mobile base with four mecanum wheels and a 5R robot arm), performs odometry as the chassis moves, and performs feedback control to drive the youBot to pick up a block at a specified location, carry it to a desired location, and put it down. 
 
-  
+[video1](https://github.com/JihaiZhao/KUKA-youBot-Mobile-Manipulation/assets/99274626/3d6fabc4-0b4e-43af-8c54-d53de56d772b)
+
 ____
 
 To achieve the goal of the project I wrote 4 functions. 
@@ -96,6 +97,3 @@ To achieve the goal of the project I wrote 4 functions.
         Output: 
 
         res: which joint reaches the limits 
-
-
-[video]https://github.com/JihaiZhao/KUKA-youBot-Mobile-Manipulation/assets/99274626/3d6fabc4-0b4e-43af-8c54-d53de56d772b
